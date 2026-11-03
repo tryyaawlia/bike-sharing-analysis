@@ -2,6 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
 
 sns.set(style="dark")
 
@@ -15,15 +18,9 @@ st.set_page_config(
 # Memuat berkas csv sebagai sebuah dataframe
 @st.cache_data
 def load_data():
-    hour_df = pd.read_csv(
-        "main_data.csv",
-        parse_dates=["dteday"]
-    )
+    hour_df = pd.read_csv(BASE_DIR / "main_data.csv", parse_dates=["dteday"])
 
-    day_df = pd.read_csv(
-        "../data/day.csv",
-        parse_dates=["dteday"]
-    )
+    day_df = pd.read_csv(BASE_DIR.parent / "data" / "day.csv", parse_dates=["dteday"])
 
     return hour_df, day_df
 
