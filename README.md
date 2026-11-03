@@ -2,25 +2,9 @@
 
 ## Deskripsi Proyek
 
-Proyek ini bertujuan untuk menganalisis data penyewaan sepeda (*Bike Sharing Dataset*) selama periode 2011–2012. Analisis dilakukan untuk memahami pola penyewaan sepeda berdasarkan waktu, kondisi cuaca, musim, serta jenis pengguna.
+Proyek ini bertujuan untuk menganalisis data penyewaan sepeda (*Bike Sharing Dataset*) selama periode 2011–2012. Analisis ini dilakukan untuk memahami pola penyewaan sepeda berdasarkan waktu, kondisi cuaca, musim, dan jenis pengguna.
 
 Hasil analisis disajikan dalam bentuk visualisasi data dan dashboard interaktif menggunakan Streamlit.
-
-## Struktur Direktori
-
-```text
-submission/
-├── dashboard/
-│   ├── dashboard.py
-│   └── main_data.csv
-├── data/
-│   ├── hour.csv
-│   └── day.csv
-├── notebook.ipynb
-├── README.md
-├── requirements.txt
-└── url.txt
-```
 
 ## Pertanyaan Bisnis
 
@@ -86,10 +70,10 @@ Dashboard akan terbuka secara otomatis melalui browser.
 - Matplotlib
 - Seaborn
 - Streamlit
-- Jupyter Notebook
+- Google Collab
 
 ## Dashboard
 
 Dashboard interaktif dapat diakses melalui tautan berikut:
 
-[Masukkan URL Streamlit Cloud di sini]
+https://bike-sharing-platform-analysis.streamlit.app/
